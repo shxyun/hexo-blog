@@ -12,8 +12,10 @@ timezone: 'Asia/Shanghai'
 
 # URL
 url: https://study.shenlijun.cn
-permalink: :year/:month/:day/:title/
+root: /
+permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
+  lang: zh
 pretty_urls:
   trailing_index: true
   trailing_html: true
@@ -84,7 +86,7 @@ ignore:
 # Extensions
 theme: next
 
-# Language Settings
+# Language Settings - 多语言配置
 language:
   - zh-cn
   - en
