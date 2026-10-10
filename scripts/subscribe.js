@@ -30,7 +30,8 @@ hexo.extend.tag.register('subscribe', function (args) {
     '<strong class="bd-sub-title">' + title + '</strong>' +
     '<span class="bd-sub-desc">' + desc + '</span>' +
     '</div>' +
-    '<form class="bd-sub-form" action="https://buttondown.com/api/emails/embed-subscribe/shenlijun" method="post" target="popupwindow" onsubmit="window.open(\'https://buttondown.com/shenlijun\',\'popupwindow\')">' +
+    '<form class="bd-sub-form" action="https://buttondown.email/api/emails/embed-subscribe/shenlijun" method="post" target="popupwindow" onsubmit="window.open(\'https://buttondown.email/shenlijun\',\'popupwindow\')">' +
+    '<input type="hidden" name="tags" value="study" />' +
     '<input class="bd-sub-input" type="email" name="email" placeholder="' + ph + '" required />' +
     '<button class="bd-sub-btn" type="submit">' + btn + '</button>' +
     '</form>' +
