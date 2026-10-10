@@ -57,3 +57,19 @@ favicon:
 post_edit:
   enable: true
   url: https://github.com/shxyun/hexo-blog/edit/main/source/_posts/
+
+# Comments - Giscus
+comments:
+  active: giscus
+  giscus:
+    repo: shxyun/hexo-blog
+    repo_id: R_kgDOU7Imxg
+    category: Announcements
+    category_id: DIC_kwDOU7Imxs4DHeYC
+    reactions_enabled: 1
+    position: top
+    input_position: bottom
+    light_theme: light
+    dark_theme: dark
+    lang: en
+
