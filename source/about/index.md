@@ -13,6 +13,10 @@ This site collects learning resources and notes that I've found useful. Tools, m
 - **Tools & software** — Recommendations for productivity and learning
 - **Study notes** — Tutorials and notes from my own learning journey
 
+## Newsletter
+
+{% subscribe %}
+
 ## Contact
 
 - Email: study@shenlijun.cn
