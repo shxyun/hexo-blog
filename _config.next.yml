@@ -23,6 +23,11 @@ sidebar:
 
 site_state: true
 
+# Social Links
+social:
+  email: mailto:study@shenlijun.cn || fa fa-envelope
+  github: https://github.com/shxyun || fab fa-github
+
 # Footer
 footer:
   copyright: true
