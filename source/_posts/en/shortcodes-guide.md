@@ -219,6 +219,30 @@ Only `title` and `link` are required. Badge colors are built in for Novellia, Go
 Platform promo links are monetized links — keep a one-line FTC disclosure on the page, for example: *"This post contains affiliate links; I may earn a commission when you start reading at no cost to you."*
 {% endalert %}
 
+## 11. Software / App Card
+
+A card built for promoting **software, mobile apps, browser extensions and SaaS deals**: app icon, license pill (`Free`, `Freemium`, `Paid`, `Subscription`, `Open Source`), platform tags (`Windows`, `macOS`, `Android`, `iOS`, `iPadOS`, `Linux`, `Web`, `Chrome`), version/file-size/update-date metadata, rating, price and a deal button. Outbound links carry `rel="nofollow sponsored noopener"`.
+
+**Syntax:**
+
+{% raw %}
+```
+{% software icon="/images/app.jpg" badge="Editor's Choice" name="App Name" developer="Vendor Inc." platforms="Windows, macOS, Android, iOS" version="2.4.1" size="38 MB" updated="Oct 2026" license="Freemium" rating="4.7" old="$14.99/mo" price="$3.39/mo" desc="One-line pitch." link="https://..." btn="Get the Deal" %}
+```
+{% endraw %}
+
+Only `name` and `link` are required. If `price` is omitted the card shows **Free**; omit any metadata field you do not have.
+
+**Result:**
+
+{% software icon="/images/shortcodes-demo-app.jpg" badge="Editor's Choice" name="ShieldVPN" developer="Shield Security Ltd." platforms="Windows, macOS, Android, iOS" version="8.2.1" size="42 MB" updated="Oct 2026" license="Subscription" rating="4.7" old="$12.99/mo" price="$3.39/mo" desc="One tap to 5,000+ fast servers in 90 countries. Blocks ads and trackers, works on 10 devices, no logs kept." link="https://nordvpn.com/" btn="Get the Deal" %}
+
+{% software icon="/images/shortcodes-demo-app.jpg" name="FocusFlow" developer="Mindful Apps" platforms="Windows, macOS, Web" version="1.6.0" size="12 MB" updated="Sep 2026" license="Open Source" rating="4.9" desc="A free Pomodoro timer with distraction stats and daily focus reports. No account required." link="https://github.com/" btn="Download Free" %}
+
+{% alert type="info" title="Affiliate disclosure" %}
+App and VPN deal links are monetized links — keep an FTC-style disclosure on the page, for example: *"This post contains affiliate links and I may earn a commission at no extra cost to you."*
+{% endalert %}
+
 ---
 
 That is the full toolbox. New components will be added to this page as they are built.
