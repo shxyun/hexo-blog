@@ -22,4 +22,4 @@ This site collects learning resources and notes that I've found useful. Tools, m
 - Email: study@shenlijun.cn
 - GitHub: [@shxyun](https://github.com/shxyun)
 
-[中文版](/zh-cn/about/)
+[中文版](/zh-CN/about/)

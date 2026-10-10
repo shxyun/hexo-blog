@@ -89,7 +89,7 @@ theme: next
 # Language Settings - 多语言配置
 language:
   - en
-  - zh-cn
+  - zh-CN
 
 # Deployment
 deploy:
