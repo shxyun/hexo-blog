@@ -3,6 +3,8 @@ node_modules/
 public/
 db.json
 .deploy*/
+# Obsidian
+.obsidian/
 # 系统
 .DS_Store
 Thumbs.db

@@ -1,0 +1,43 @@
+# NexT Theme Config for study.shenlijun.cn
+
+# Scheme
+scheme: Gemini
+darkmode: true
+
+# Menu
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  about: /about/ || fa fa-user
+
+menu_settings:
+  icons: true
+  badges: true
+
+# Sidebar
+sidebar:
+  position: left
+  display: post
+
+site_state: true
+
+# Footer
+footer:
+  copyright: true
+
+# Local Search
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# Creative Commons
+creative_commons:
+  license: by-nc-sa
+  size: small
+  sidebar: true
+  post: true
