@@ -195,6 +195,30 @@ Optional parameters: `title`, `desc`, `ph` (placeholder), `btn`.
 
 {% subscribe %}
 
+## 10. Web-Novel Card (Platform Promos)
+
+A card purpose-built for promoting **serialized fiction apps** such as **Novellia, GoodNovel, PlotNovel and Novel Master**: a portrait cover, a brand-colored platform badge, an Ongoing/Completed status pill, chapter count, star rating, genre tags, a free-chapters hook and a "Start Reading" button.
+
+**Syntax:**
+
+{% raw %}
+```
+{% novel platform="GoodNovel" cover="/images/cover.jpg" title="Novel Title" author="Pen Name" status="Ongoing" chapters="486" rating="4.8" genres="Werewolf, Romance" desc="A one-line hook." free="First 30 chapters free" link="https://..." btn="Start Reading" %}
+```
+{% endraw %}
+
+Only `title` and `link` are required. Badge colors are built in for Novellia, GoodNovel, PlotNovel, Novel Master, Royal Road, Wattpad, WebNovel, Kindle, Kobo and Bookshop.org (any other platform gets a neutral blue badge). `status` accepts `Ongoing`, `Completed` or `Hiatus`; omit any field you do not need.
+
+**Result:**
+
+{% novel platform="GoodNovel" cover="/images/novel-demo-werewolf.jpg" title="Her Mate, Her Enemy" author="Luna Vane" status="Ongoing" chapters="486" rating="4.8" genres="Werewolf, Romance, Paranormal" desc="On the night of the blood moon, she finds out her destined mate is the alpha who destroyed her pack — and the feeling is mutual." free="First 30 chapters free" link="https://www.goodnovel.com/" btn="Start Reading" %}
+
+{% novel platform="Novellia" cover="/images/novel-demo-xianxia.jpg" title="Sword of the Ninth Heaven" author="Mo Qingchen" status="Completed" chapters="1204" rating="4.9" genres="Xianxia, Cultivation, Adventure" desc="A discarded outer disciple inherits a broken jade sword containing the will of an immortal emperor. The long climb to the ninth heaven begins tonight." free="Full book unlocked" link="https://www.novellia.com/" btn="Read the Full Novel" %}
+
+{% alert type="info" title="Affiliate disclosure" %}
+Platform promo links are monetized links — keep a one-line FTC disclosure on the page, for example: *"This post contains affiliate links; I may earn a commission when you start reading at no cost to you."*
+{% endalert %}
+
 ---
 
 That is the full toolbox. New components will be added to this page as they are built.
