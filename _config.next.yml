@@ -46,3 +46,14 @@ creative_commons:
   size: small
   sidebar: true
   post: true
+
+# Favicon
+favicon:
+  small: /favicon.svg
+  medium: /favicon.svg
+  apple_touch_icon: /favicon.svg
+
+# Post Edit Link
+post_edit:
+  enable: true
+  url: https://github.com/shxyun/hexo-blog/edit/main/source/_posts/
