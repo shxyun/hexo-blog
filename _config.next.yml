@@ -11,10 +11,15 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   about: /about/ || fa fa-user
+  中文: /zh-CN/ || fa fa-language
 
 menu_settings:
   icons: true
   badges: true
+
+# 自定义注入：菜单链接跟随语言
+custom_file_path:
+  bodyEnd: source/_data/body-end.njk
 
 # Sidebar
 sidebar:

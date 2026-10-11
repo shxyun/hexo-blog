@@ -1,0 +1,22 @@
+<script>
+// Menu links follow the current language.
+// Chinese site (/zh-CN/): prefix menu links with /zh-CN; the "zh" switch item goes back to the English site.
+// English site: about actually lives at /en/about/, so fix the /about/ menu link.
+(function () {
+  var isZh = location.pathname.indexOf('/zh-CN') === 0;
+  document.querySelectorAll('.menu a').forEach(function (a) {
+    var href = a.getAttribute('href') || '';
+    if (!href || href.charAt(0) !== '/') return;
+    if (isZh) {
+      if (href.indexOf('/zh-CN') === 0) {
+        if (href.indexOf('/zh-CN/') === 0 && href !== '/zh-CN/') return; // already a Chinese link
+        a.setAttribute('href', '/'); // switch item: back to English site
+        return;
+      }
+      a.setAttribute('href', '/zh-CN' + href);
+    } else {
+      if (href === '/about/') a.setAttribute('href', '/en/about/');
+    }
+  });
+})();
+</script>
