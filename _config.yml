@@ -61,6 +61,12 @@ index_generator:
   per_page: 10
   order_by: -date
 
+# i18n 生成器（hexo-generator-plus）：按语言生成首页/归档/分类/标签页
+generator_plus:
+  language: ['en', 'zh-CN']
+  pagination_dir: 'page'
+  generator: ["index", "archive", "category", "tag"]
+
 # Category & Tag
 default_category: uncategorized
 category_map:
