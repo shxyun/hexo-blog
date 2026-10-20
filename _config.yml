@@ -8,6 +8,7 @@ subtitle: 'study.shenlijun.cn'
 description: 'Resource sharing and learning notes'
 keywords:
 author: Shen Lijun
+email: study@shenlijun.cn
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -96,6 +97,13 @@ theme: next
 language:
   - en
   - zh-CN
+
+# Feed (hexo-generator-feed)
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
 
 # Deployment
 deploy:
