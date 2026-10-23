@@ -19,6 +19,7 @@ menu_settings:
 
 # 自定义注入：菜单链接跟随语言
 custom_file_path:
+  head: source/_data/head.njk
   bodyEnd: source/_data/body-end.njk
 
 # Sidebar
