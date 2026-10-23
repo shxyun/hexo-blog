@@ -97,8 +97,19 @@ hexo.extend.helper.register('post_edit', function(src) {
   });
 });
 
+// 按当前页面语言过滤文章，供多语言站点的归档计数使用
+function postsOfPageLang(ctx) {
+  const defaultLang = [].concat(ctx.config.language || 'en')[0];
+  const lang = ctx.page.lang || defaultLang;
+  return ctx.site.posts.filter(post => (post.lang || defaultLang) === lang);
+}
+
 hexo.extend.helper.register('post_count', function(year) {
-  return this.site.posts.filter(post => this.date(post.date, 'YYYY') === year).count();
+  return postsOfPageLang(this).filter(post => this.date(post.date, 'YYYY') === year).count();
+});
+
+hexo.extend.helper.register('post_total', function() {
+  return postsOfPageLang(this).count();
 });
 
 hexo.extend.helper.register('gitalk_md5', function(path) {
